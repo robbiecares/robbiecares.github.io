@@ -22,7 +22,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+  myHeading.textContent = storeName ? 'Mozilla is cool, ' + storedName : 'Mozilla is cool!'
 }
 
 myButton.onclick = function() {
